@@ -14,24 +14,143 @@
       property="og:description"
       content="Try the best chocolate in the world!"
     />
-    <meta property="og:image" content="assets/images/her/chocolate-desktop.webp" />
+    <meta
+      property="og:image"
+      content="assets/images/her/chocolate-desktop.webp"
+    />
     <!-- <meta property="og:url" content="https://simplychocolate.com" /> -->
-    <link rel='icon' href='/assets/icons/favicon.ico'>
     <title>Simply Chocolate</title>
+    <link rel="icon" href="/assets/icons/favicon.ico" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <header>
-        <div class="container">
-            <div class="logo-container">
-                <p class="logo-text"><span class="logo-text_italic">Simply</span> Chocolate</p>
-                <svg class="logo-icon">
-                    <use href="/assets/icons/svg-sprite.svg#icon-chocolate"></use>
-                </svg>
-            </div>
+      <div class="container">
+        <div class="logo-container">
+          <p class="logo-text">
+            <span class="logo-text_italic">Simply</span> Chocolate
+          </p>
+          <svg class="logo-icon" width="24" height="24" aria-label="logo">
+            <use href="/assets/icons/svg-sprite.svg#icon-chocolate"></use>
+          </svg>
         </div>
+        <nav>
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link" href="#home">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#production">How it’s made?</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#reviews">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-networks-container">
+          <ul class="social-networks">
+            <li class="social-networks-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook link"
+              >
+                <svg
+                  class="social-networks-icon"
+                  width="24"
+                  height="24"
+                  aria-label="facebook icon"
+                >
+                  <use href="/assets/icons/svg-sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram link"
+              >
+                <svg
+                  class="social-networks-icon"
+                  width="24"
+                  height="24"
+                  aria-label="instagram icon"
+                >
+                  <use href="/assets/icons/svg-sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-twitter-item">
+              <a
+                href="https://www.pinterest.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter link"
+              >
+                <svg
+                  class="social-networks-icon"
+                  width="24"
+                  height="24"
+                  aria-label="twitter icon"
+                >
+                  <use href="/assets/icons/svg-sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Treat yourself or a loved one to 
+              our finest ingredients for a moment 
+              of pure delight!</h1>
+          <div class="hero-button-container">
+            <button class="button prymary-button " type="button">Buy now</button>
+            <a class="button secondary-button" href="#production">How it’s made</a>
+          </div>
+          <button class="button scroll-down-button" type="button">
+            scroll down 
+            <svg
+              class="scroll-down-icon"
+              width="28"
+              height="28"
+              aria-label="scroll down icon"
+            >
+              <use href="/assets/icons/svg-sprite.svg#icon-scroll-down"></use>
+            </svg>
+          </button>
+
+
+        </div>
+      </section>
+      <section class="benefits" id="benefits">
+        <div class="container"></div>
+      </section>
+      <section class="ingridients" id="ingridients">
+        <div class="container"></div>
+      </section>
+      <section class="production" id="production">
+        <div class="container"></div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container"></div>
+      </section>
+
+      <section class="bestsellers" id="bestsellers">
+        <div class="container"></div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container"></div>
+    </main>
     <footer></footer>
   </body>
   <script type="module" src="/js/main.js"></script>
