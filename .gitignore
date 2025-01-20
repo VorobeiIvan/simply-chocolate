@@ -1,0 +1,27 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore build artifacts (if any)
+dist/
+build/
+
+# Ignore node_modules (if you use npm for tools like Sass or PostCSS)
+node_modules/
+
+# Ignore SASS cache files (if using SASS)
+.sass-cache/
+
+# Ignore any environmental files
+.env
+.env.local
