@@ -22,18 +22,29 @@
     <title>Simply Chocolate</title>
     <link rel="icon" href="/assets/icons/favicon.ico" />
     <link rel="stylesheet" href="/css/main.css" />
+
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo-container">
+      <div class="container header">
+        <a href = "#home" class = "logo-link">
           <p class="logo-text">
-            <span class="logo-text_italic">Simply</span> Chocolate
+            <span class="logo-text--italic">Simply</span> Chocolate
           </p>
-          <svg class="logo-icon" width="24" height="24" aria-label="logo">
+          <svg class="logo-icon" width="21" height="21" aria-label="logo">
             <use href="/assets/icons/svg-sprite.svg#icon-chocolate"></use>
           </svg>
-        </div>
+        </a>
+        <button class="button burger-menu-button" type="button">
+          <svg
+            class="burger-menu-icon"
+            width="28"
+            height="28"
+            aria-label="burger menu icon"
+          >
+          <use href="/assets/icons/svg-sprite.svg#icon-burger-menu"></use>
+        </svg>
+        </button>
         <nav>
           <ul class="menu">
             <li class="menu-item">
@@ -49,8 +60,9 @@
         </nav>
         <div class="social-networks-container">
           <ul class="social-networks">
-            <li class="social-networks-item">
+            <li >
               <a
+                class="social-networks-link"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -66,8 +78,9 @@
                 </svg>
               </a>
             </li>
-            <li class="social-networks-item">
+            <li>
               <a
+              class="social-networks-link"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -83,9 +96,10 @@
                 </svg>
               </a>
             </li>
-            <li class="social-twitter-item">
+            <li>
               <a
-                href="https://www.pinterest.com/"
+              class="social-networks-link"
+                href="https://www.twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="twitter link"

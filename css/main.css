@@ -1,4 +1,125 @@
-@import url('reset.css');
+/* @import url('reset.css'); */
 @import url('variables.css');
 @import url('fonts.css');
 
+/*----------------------------General--------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  color: #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ------------------------------------------------------------*/
+/*-----------------------------Header--------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 14px 20px;
+}
+/*-------------------------------------------------------------*/
+/*---------------------------Logo------------------------------*/
+.logo-link {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 4px;
+  /* max-width:170px; */
+  text-decoration: none;
+  color: inherit;
+}
+.logo-text {
+  font-weight: 700;
+  letter-spacing: -0.42px;
+  text-transform: uppercase;
+}
+.logo-text--italic {
+  font-style: italic;
+}
+
+.logo-icon {
+  fill: #fcf1e0;
+  stroke: #fd9222;
+}
+
+/* ------------------------------------------------------------*/
+
+/*-------------------------Burger menu-------------------------*/
+.burger-menu-button {
+}
+.burger-menu-icon {
+  stroke: #111;
+}
+
+/*-------------------------------------------------------------*/
+
+/*-----------------------------Menu----------------------------*/
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.menu-item {
+}
+.menu-link {
+  color: #111;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  text-decoration: none;
+}
+/* ------------------------------------------------------------*/
+/*---------------------------Social networks-------------------*/
+.social-networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.social-networks-link {
+box-sizing: border-box;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.social-networks-icon {
+    fill: #111;
+
+}
+/*-------------------------------------------------------------*/
