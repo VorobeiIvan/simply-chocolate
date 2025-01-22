@@ -13,7 +13,8 @@ body {
   font-weight: 400;
   line-height: 18px;
   /* 128.571% */
-  letter-spacing: -0.28px;
+  letter-spacing: 0.72;
+  background-color: #fafafa;
 }
 
 ul {
@@ -22,12 +23,28 @@ ul {
   margin: 0;
 }
 
-.container {}
+.container {
+  padding: 0 20px;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
 .button {
   cursor: pointer;
   border: none;
   background-color: transparent;
+  color: #FFF;
+
+  display: flex;
+  padding: 12px 28px;
+  align-items: center;
+  gap: 14px;
+
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .visually-hidden {
@@ -46,10 +63,19 @@ ul {
 /* ------------------------------------------------------------*/
 /*-----------------------------Header--------------------------*/
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fafafa;
+  z-index: 100;
+
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px 14px 20px;
+  padding-top: 20px;
+  padding-bottom: 14px;
 }
 
 /*-------------------------------------------------------------*/
@@ -83,9 +109,10 @@ ul {
 
 /*-------------------------Burger menu-------------------------*/
 .burger-menu-button {
+  padding: 0;
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   overflow: hidden;
 
   &:hover .burger-menu-icon {
@@ -204,8 +231,6 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 14px;
-
-
 }
 
 .social-networks-link {
@@ -236,4 +261,157 @@ ul {
   }
 }
 
+/*-------------------------------------------------------------*/
+
+/*----------------------------Hero-----------------------------*/
+.hero {
+  padding-top: 64px;
+}
+
+.hero-bg-image {
+  align-content: end;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 335px;
+  min-height: 620px;
+  border-radius: 30px;
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+    url(/assets/images/hero/chocolate-mobile.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-title {
+  max-width: 299px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  /* 120% */
+  letter-spacing: 1.6px;
+}
+
+.hero-button-container {
+  display: flex;
+  gap: 14px;
+}
+
+.primary-button {
+  border-radius: 100px;
+  background: #FD9222;
+}
+
+.secondary-button {
+  border-radius: 100px;
+  border: 1px solid #FFF;
+  text-decoration: none;
+}
+
+.scroll-down-button {
+  padding: 0;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 14px;
+  /* 116.667% */
+  letter-spacing: 0.36px;
+  gap: 12px;
+}
+
+.scroll-down-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.scroll-down-icon {
+  fill: #FD9222;
+  width: 16px;
+  height: 16px;
+}
+
+/*-------------------------------------------------------------*/
+
+/*--------------------------Benefits---------------------------*/
+.benefits {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1E1823;
+  color: #fff;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefits-icon-container {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  padding: 15px;
+  margin-bottom: 22px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.benefits-icon {
+  fill: transparent;
+  stroke: #fd9222;
+}
+
+.benefits-title {
+  margin-bottom: 18px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3px;
+}
+
+.benefits-text {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.62px;
+}
+
+/*-------------------------------------------------------------*/
+
+/*--------------------------Ingredients------------------------*/
+/*-------------------------------------------------------------*/
+
+/*--------------------------Production-------------------------*/
+/*-------------------------------------------------------------*/
+/*----------------------------Products-------------------------*/
+/*-------------------------------------------------------------*/
+
+/*----------------------------Bestsellers----------------------*/
+/*-------------------------------------------------------------*/
+
+/*----------------------------Reviews--------------------------*/
+/*-------------------------------------------------------------*/
+
+
+/*----------------------------Footer---------------------------*/
 /*-------------------------------------------------------------*/
