@@ -409,7 +409,6 @@ section {
 
 .section-title {
   margin-bottom: 32px;
-
   width: 283px;
   color: #111;
   text-align: center;
@@ -633,9 +632,144 @@ section {
 
 /*-------------------------------------------------------------*/
 /*----------------------------Products-------------------------*/
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.products-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.products-item {
+  display: flex;
+  padding: 32px 52px 32px 53px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.10);
+  background: #FFF;
+}
+
+.products-title {
+  margin-bottom: 2px;
+  color: #111;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 133.333% */
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+
+}
+
+.products-subtitle {
+  margin-bottom: 18px;
+  color: rgba(17, 17, 17, 0.70);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  /* 116.667% */
+  letter-spacing: -0.24px;
+}
+
+.price {
+  display: flex;
+  width: 94px;
+  padding: 8px 20px;
+  gap: 14px;
+
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.10);
+  background: #FAFAFA;
+
+
+  color: #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 /*-------------------------------------------------------------*/
 
 /*----------------------------Bestsellers----------------------*/
+.bestsellers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bestsellers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.bestsellers-item {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.bestsellers-description-container {
+  border-radius: 15px 15px 0px 0px;
+  background: linear-gradient(165deg, rgba(253, 253, 255, 0.10) 3.97%, rgba(8, 2, 21, 0.00) 109.76%);
+
+  backdrop-filter: blur(7.5px);
+}
+
+.bestsellers-description-text {
+  color: #FAFAFA;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+.title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+
+  border-radius: 0px 0px 15px 15px;
+  border-right: 1px solid rgba(17, 17, 17, 0.10);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.10);
+  border-left: 1px solid rgba(17, 17, 17, 0.10);
+  background: #FFF;
+}
+
+.bestsellers-title {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 133.333% */
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+
+
+}
+
 /*-------------------------------------------------------------*/
 
 /*----------------------------Reviews--------------------------*/
