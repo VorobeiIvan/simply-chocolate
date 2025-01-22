@@ -399,9 +399,238 @@ section {
 /*-------------------------------------------------------------*/
 
 /*--------------------------Ingredients------------------------*/
+.ingredients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.section-title {
+  margin-bottom: 32px;
+
+  width: 283px;
+  color: #111;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 120% */
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.accent {
+  color: #FD9222;
+}
+
+.ingredients-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ingredients-item {
+  width: 335px;
+  height: 270px;
+  border-radius: 15px;
+  background-color: #FFF;
+  border: 1px solid #FD9222;
+
+  .arrow-icon {
+    stroke: #FD9222;
+  }
+
+}
+
+.ingredients-item:first-child,
+.ingredients-item:nth-child(5) {
+  background-color: #FD9222;
+
+  .ingredient-title {
+    color: #FFF;
+  }
+
+  .arrow-icon {
+    stroke: #FFF;
+  }
+}
+
+.ingredients-item:nth-child(3),
+.ingredients-item:nth-child(7) {
+  background-color: #1E1823;
+
+  .ingredient-title {
+    color: #FFF;
+  }
+
+  .arrow-icon {
+    stroke: #FFF;
+  }
+
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.arrow-button {
+  padding: 0;
+  position: relative;
+  top: 14px;
+  right: 14px;
+  align-self: self-end;
+}
+
+.arrow-icon {
+  fill: transparent;
+}
+
+.ingredients-img {
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+.ingredient-title {
+  color: #111;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  margin-left: 28px;
+}
+
+.description {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 15px 20px;
+}
+
+.description-button-container {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+
+.benefits-button {
+  display: flex;
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 35px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  /* 120% */
+}
+
+.primary {
+  background-color: #FD9222;
+  color: #FFF;
+}
+
+.secondary {
+  border: 1px solid #FD9222;
+  background-color: #FAFAFA;
+  color: #111;
+}
+
+.description-text {
+  height: 162px;
+
+  color: #111;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+
 /*-------------------------------------------------------------*/
 
 /*--------------------------Production-------------------------*/
+.production {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.production-vidio {}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+
+  width: 100%;
+  height: 500px;
+  background-image: url(/assets/images/production/video-screen-mobile.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.arrow-button {
+  margin-left: 50%;
+  margin-bottom: 75%;
+
+  cursor: pointer;
+}
+
+.play-icon {
+
+  fill: transparent;
+  stroke: #FFF;
+}
+
+.production-content {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px 14px;
+}
+
+.production-title {
+  margin-bottom: 20px;
+  color: #111;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 133.333% */
+}
+
+.production-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+
+
 /*-------------------------------------------------------------*/
 /*----------------------------Products-------------------------*/
 /*-------------------------------------------------------------*/
