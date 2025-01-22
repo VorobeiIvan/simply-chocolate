@@ -42,10 +42,10 @@
             height="28"
             aria-label="burger menu icon"
           >
-          <use href="/assets/icons/svg-sprite.svg#icon-burger-menu"></use>
+            <use href="/assets/icons/svg-sprite.svg#icon-burger-menu"></use>
         </svg>
         </button>
-        <nav>
+        <nav class="nav visually-hidden">
           <ul class="menu">
             <li class="menu-item">
               <a class="menu-link" href="#home">Home</a>
@@ -58,7 +58,7 @@
             </li>
           </ul>
         </nav>
-        <div class="social-networks-container">
+        <div class="social-networks-container visually-hidden">
           <ul class="social-networks">
             <li >
               <a
@@ -167,5 +167,88 @@
     </main>
     <footer></footer>
   </body>
+  <!-- Menu popup -->
+   <div class="overlay visually-hidden">
+    <div class="menu-popup">
+     <button class="close-button button" type="button"> 
+      <svg class="close-icon" width="12" height="12" aria-label="close icon">
+       <use href="/assets/icons/svg-sprite.svg#icon-x-close">
+       </svg>
+      </button>
+      <nav>
+          <ul class="menu burger">
+            <li class="menu-item">
+              <a class="menu-link burger" href="#home">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link burger" href="#production">How it’s made?</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link burger" href="#reviews">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-networks-container">
+          <ul class="social-networks burger">
+            <li >
+              <a
+                class="social-networks-link burger"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook link"
+              >
+                <svg
+                  class="social-networks-icon burger"
+                  width="24"
+                  height="24"
+                  aria-label="facebook icon"
+                >
+                  <use href="/assets/icons/svg-sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+              class="social-networks-link burger"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram link"
+              >
+                <svg
+                  class="social-networks-icon burger"
+                  width="24"
+                  height="24"
+                  aria-label="instagram icon"
+                >
+                  <use href="/assets/icons/svg-sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+              class="social-networks-link burger"
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter link"
+              >
+                <svg
+                  class="social-networks-icon burger"
+                  width="24"
+                  height="24"
+                  aria-label="twitter icon"
+                >
+                  <use href="/assets/icons/svg-sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+
+   </div>
   <script type="module" src="/js/main.js"></script>
 </html>
