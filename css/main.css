@@ -45,20 +45,15 @@ body {
 .container {
   padding-left:20px;
   padding-right:20px;
-  min-width: 320px;
-  max-width: 767px;
 
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  @media screen and (min-width: 768px){
     padding-left:32px;
     padding-right:32px;
-    max-width: 1199px;
-    min-width: 768px;
+
   }
   
-@media screen and (min-width: 1200px) {
-  min-width: 1200px;
-}
 }
 
 .section {
@@ -106,16 +101,22 @@ cursor: pointer;
 
 /* #region --------------------------Header------------------------------ */
 .header {
-  
+  max-height: 80px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color:transparent;
+  background-color:var(--light, #FAFAFA);
   z-index: 99;
+  
 
   padding-top: 20px;
   padding-bottom: 14px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;}
+
 }
 /* #endregion ------------------------------------------------------------*/
 
@@ -356,7 +357,10 @@ gap: 8px;
 
 /* #region ----------------------------Hero-----------------------------*/
 .hero {
-  padding-top: 64px;
+  padding-top:64px;
+  @media screen and (min-width: 768px){
+    padding-top:80px;
+  }
 }
 
 .hero-bg-image {
@@ -364,19 +368,66 @@ gap: 8px;
   position: relative;
   top: 0;
   left: 0;
-  z-index: -1;
-  min-width: 335px;
   min-height: 620px;
   border-radius: 30px;
   background-image:
     linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
     url(/assets/images/hero/chocolate-mobile.webp);
-  background-position: center;
+  background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+/* Retina-екрани для мобільних */
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  .hero-bg-image {
+    background-image:
+      linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+      url(/assets/images/hero/chocolate-mobile@2x.webp);
+  }
+}
+
+/* Планшети */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero-bg-image {
+    background-image:
+      linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+      url(/assets/images/hero/chocolate-tablet.webp);
+  }
+}
+
+/* Retina-екрани для планшетів */
+@media (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero-bg-image {
+    background-image:
+      linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+      url(/assets/images/hero/chocolate-tablet@2x.webp);
+  }
+}
+
+/* Десктопи */
+@media (min-width: 1200px) {
+  .hero-bg-image {
+    min-width: 1136px;
+    min-height: 600px;
+    background-image:
+      linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+      url(/assets/images/hero/chocolate-desktop.webp);
+  }
+}
+
+/* Retina-екрани для десктопів */
+@media (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero-bg-image {
+    background-image:
+      linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+      url(/assets/images/hero/chocolate-desktop@2x.webp);
+  }
+}
+
+
 .hero-content {
+  color: var(--white, #FFF);
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -384,109 +435,129 @@ gap: 8px;
 }
 
 .hero-title {
-  max-width: 299px;
-  color: #FFF;
+  max-width: 240px;
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px;
-  /* 120% */
-  letter-spacing: 1.6px;
+  line-height: 24px; /* 120% */
+  letter-spacing: -0.6px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 404px;
+    font-size: 28px;
+    line-height: 34px; /* 121.429% */
+    letter-spacing: -0.84px;
+  }
+
 }
 
 .hero-button-container {
-  display: flex;
   gap: 14px;
+  flex-wrap: wrap;
 }
 
-.primary-button {
+.hero-button {
+  color: var(--white, #FFF);
+  padding: 12px 28px;
   border-radius: 100px;
-  background: #FD9222;
+  @media screen and (min-width: 768px) {
+    padding: 14px 40px;
+  }
+  text-decoration: none;
+  gap: 14px;
+}
+.primary-button {
+  background: var(--orange, #FD9222);
+
 }
 
 .secondary-button {
-  border-radius: 100px;
-  border: 1px solid #FFF;
-  text-decoration: none;
+  border: 1px solid var(--white, #FFF);
+}
+
+.scroll-down-button-container {
+  gap: 14px;
+  font-size: 12px;
+
+  font-weight: 500;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: -0.36px;
 }
 
 .scroll-down-button {
-  padding: 0;
-  color: #FFF;
-  font-size: 12px;
-  line-height: 14px;
-  /* 116.667% */
-  letter-spacing: 0.36px;
-  gap: 12px;
-}
-
-.scroll-down-icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 6px;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--white, #FFF);
 }
 
 .scroll-down-icon {
-  fill: #FD9222;
-  width: 16px;
-  height: 16px;
+  fill: var(--orange, #FD9222);
 }
 
 /* #endregion ------------------------------------------------------------*/
 
 /* #region --------------------------Benefits---------------------------*/
 .benefits {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #1E1823;
-  color: #fff;
+  background-color: var(--violet, #1E1823);
+  color: var(--white, #FFF);
 }
 
 .benefits-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    row-gap: 44px;
+    column-gap: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    column-gap:44px;
+  }
+
 }
 
 .benefits-icon-container {
-  display: flex;
   width: 62px;
   height: 62px;
   padding: 15px;
   margin-bottom: 22px;
-  justify-content: center;
-  align-items: center;
-
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.50);
 }
 
+
 .benefits-icon {
   fill: transparent;
-  stroke: #fd9222;
+  stroke: var(--orange, #FD9222);
 }
 
 .benefits-title {
   margin-bottom: 18px;
-  color: #FFF;
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 3px;
+  letter-spacing: 0.18px;
 }
 
 .benefits-text {
+  max-width: 308px;
   color: rgba(255, 255, 255, 0.70);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
-  letter-spacing: 1.62px;
+  letter-spacing: -0.28px;
+  padding-right: 28px;
 }
-
+.line{
+ width: 1px;
+height: 124px;
+background: rgba(255, 255, 255, 0.50);
+}
+.benefits-line{
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 /* #endregion ------------------------------------------------------------*/
 
 /* #region --------------------------Ingredients------------------------*/
@@ -1040,6 +1111,7 @@ gap: 8px;
 }
 
 .email-input {
+  color:var(--white, #FFF);
   padding: 14px 18px;
   border-radius: 30px;
   border: 1.5px solid rgba(255, 255, 255, 0.15);

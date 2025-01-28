@@ -120,7 +120,7 @@
         </div>
       </div>
     </header>
-    <main class="visually-hidden" >
+    <main>
       <section class="hero section" id="home">
         <div class="container">
           <div class="hero-bg-image">
@@ -128,33 +128,35 @@
             <h1 class="hero-title">Treat yourself or a loved one to 
               our finest ingredients for a moment 
               of pure delight!</h1>
-          <div class="hero-button-container ">
-            <button class="button primary-button " type="button">Buy now</button>
-            <a class="button secondary-button" href="#production">How it’s made</a>
+          <div class="hero-button-container flex-position">
+            <div class="hero-button-container flex-position">
+            <button class="button hero-button primary-button flex-position" type="button">Buy now</button>
+
+            <a class="button hero-button secondary-button flex-position link" href="#production">How it’s made</a>
           </div>
-          <button class="button scroll-down-button" type="button">
-            scroll down 
-            <div class="scroll-down-icon-container">
-               <svg
-              class="scroll-down-icon"
-              width="28"
-              height="28"
-              aria-label="scroll down icon"
-            >
-              <use href="/assets/icons/svg-sprite.svg#icon-arrow-down"></use>
-            </svg>
-            </div>
-           
-          </button>
+          <div class="scroll-down-button-container flex-position">
+<p>scroll down </p>
+<button class="button scroll-down-button flex-position" type="button">
+  <svg
+  class="scroll-down-icon"
+  width="16"
+  height="16"
+  aria-label="scroll down icon"
+  >
+  <use href="/assets/icons/svg-sprite.svg#icon-arrow-down"/>
+</svg>
+</button>
+</div>
+          </div>
           </div>
         </div>
       </section>
-      <section class="section" id="benefits">
-        <div class="container benefits">
+      <section class="section benefits" id="benefits">
+        <div class="container">
           <h2 class="section-title visually-hidden">benefits</h2>
-          <ul class="benefits-list">
+          <ul class="benefits-list list">
             <li>
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-container flex-position">
                  <svg class="benefits-icon" width="32" height="32" aria-label="chocolate in packaging">
                 <use href="/assets/icons/svg-sprite.svg#icon-chocolate-in-packaging"></use>
               </svg>
@@ -166,8 +168,9 @@
                 Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
             </li>
+            <li class="benefits-line"><div class="line"></div></li>
                 <li>
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-container flex-position">
                  <svg class="benefits-icon" width="32" height="32" aria-label="coin">
                 <use href="/assets/icons/svg-sprite.svg#icon-coin"></use>
               </svg>
@@ -179,8 +182,9 @@
                 Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
               </p>
             </li>
+            <li class="benefits-line"><div class="line"></div></li>
                 <li>
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-container flex-position">
                  <svg class="benefits-icon" width="32" height="32" aria-label="spoon">
                 <use href="/assets/icons/svg-sprite.svg#icon-spoon"></use>
               </svg>
