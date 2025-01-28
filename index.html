@@ -25,44 +25,46 @@
 
   </head>
   <body>
-    <header>
-      <div class="container header">
-        <a href = "#home" class = "logo-link">
+    <header class="header">
+      <div class="container flex-position">
+        <div class="logo-container">
+        <a href = "#home" class = "logo-link flex-position link">
           <p class="logo-text">
             <span class="logo-text--italic">Simply</span> Chocolate
           </p>
           <svg class="logo-icon" width="21" height="21" aria-label="logo">
-            <use href="/assets/icons/svg-sprite.svg#icon-chocolate"></use>
+            <use href="/assets/icons/svg-sprite.svg#icon-chocolate"/>
           </svg>
         </a>
-        <button class="button burger-menu-button" type="button">
-          <svg
-            class="burger-menu-icon"
-            width="28"
-            height="28"
-            aria-label="burger menu icon"
-          >
-            <use href="/assets/icons/svg-sprite.svg#icon-burger-menu"></use>
-        </svg>
-        </button>
-        <nav class="nav visually-hidden">
-          <ul class="menu">
+      </div>
+      <button class="button burger-menu-button" type="button">
+        <svg
+          class="burger-menu-icon"
+          width="28"
+          height="28"
+          aria-label="burger menu icon"
+        >
+          <use href="/assets/icons/svg-sprite.svg#icon-burger-menu"/>
+      </svg>
+      </button>
+      <nav class="nav">
+          <ul class="menu list flex-position">
             <li class="menu-item">
-              <a class="menu-link" href="#home">Home</a>
+              <a class="menu-link link" href="#home">Home</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="#production">How it’s made?</a>
+              <a class="menu-link link" href="#production">How it’s made?</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="#reviews">Chocolate is loved</a>
+              <a class="menu-link link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
-        <div class="social-networks-container visually-hidden">
-          <ul class="social-networks">
+        <div class="social-networks-container ">
+          <ul class="social-networks flex-position list">
             <li >
               <a
-                class="social-networks-link"
+                class="social-networks-link flex-position link"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -74,13 +76,13 @@
                   height="24"
                   aria-label="facebook icon"
                 >
-                  <use href="/assets/icons/svg-sprite.svg#icon-facebook"></use>
+                  <use href="/assets/icons/svg-sprite.svg#icon-facebook"/>
                 </svg>
               </a>
             </li>
             <li>
               <a
-              class="social-networks-link"
+              class="social-networks-link flex-position link"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -92,13 +94,13 @@
                   height="24"
                   aria-label="instagram icon"
                 >
-                  <use href="/assets/icons/svg-sprite.svg#icon-instagram"></use>
+                  <use href="/assets/icons/svg-sprite.svg#icon-instagram"/>
                 </svg>
               </a>
             </li>
             <li>
               <a
-              class="social-networks-link"
+              class="social-networks-link flex-position link"
                 href="https://www.twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -110,7 +112,7 @@
                   height="24"
                   aria-label="twitter icon"
                 >
-                  <use href="/assets/icons/svg-sprite.svg#icon-twitter"></use>
+                  <use href="/assets/icons/svg-sprite.svg#icon-twitter"/>
                 </svg>
               </a>
             </li>
@@ -118,7 +120,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="visually-hidden" >
       <section class="hero section" id="home">
         <div class="container">
           <div class="hero-bg-image">
@@ -546,7 +548,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer visually-hidden">
       <div class="container"> 
         <div class="top-footer">
              <h2 class="footer-title">
@@ -643,30 +645,30 @@
   </body>
   <!-- Menu popup -->
    <div class="overlay visually-hidden">
-    <div class="menu-popup">
-     <button class="close-button button" type="button"> 
-      <svg class="close-icon" width="12" height="12" aria-label="close icon">
-       <use href="/assets/icons/svg-sprite.svg#icon-x-close">
+    <div class="menu-popup flex-position ">
+     <button class="close-button button flex-position" type="button"> 
+      <svg class="burger-menu-close-icon" width="12" height="12" aria-label="close icon">
+       <use href="/assets/icons/svg-sprite.svg#icon-x-close"/>
        </svg>
       </button>
       <nav>
-          <ul class="menu burger">
+          <ul class="burger menu list">
             <li class="menu-item">
-              <a class="menu-link burger" href="#home">Home</a>
+              <a class="menu-link burger link" href="#home">Home</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link burger" href="#production">How it’s made?</a>
+              <a class="menu-link burger link" href="#production">How it’s made?</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link burger" href="#reviews">Chocolate is loved</a>
+              <a class="menu-link burger link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
         <div class="social-networks-container">
-          <ul class="social-networks burger">
+          <ul class="social-networks burger list">
             <li >
               <a
-                class="social-networks-link burger"
+                class="social-networks-link burger link"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -678,13 +680,13 @@
                   height="24"
                   aria-label="facebook icon"
                 >
-                  <use href="/assets/icons/svg-sprite.svg#icon-facebook"></use>
+                  <use href="/assets/icons/svg-sprite.svg#icon-facebook"/>
                 </svg>
               </a>
             </li>
             <li>
               <a
-              class="social-networks-link burger"
+              class="social-networks-link burger link"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -696,13 +698,13 @@
                   height="24"
                   aria-label="instagram icon"
                 >
-                  <use href="/assets/icons/svg-sprite.svg#icon-instagram"></use>
+                  <use href="/assets/icons/svg-sprite.svg#icon-instagram"/>
                 </svg>
               </a>
             </li>
             <li>
               <a
-              class="social-networks-link burger"
+              class="social-networks-link burger link"
                 href="https://www.twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -714,7 +716,7 @@
                   height="24"
                   aria-label="twitter icon"
                 >
-                  <use href="/assets/icons/svg-sprite.svg#icon-twitter"></use>
+                  <use href="/assets/icons/svg-sprite.svg#icon-twitter"/>
                 </svg>
               </a>
             </li>
