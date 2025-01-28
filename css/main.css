@@ -2,7 +2,7 @@
 /* @import url('variables.css'); */
 @import url('fonts.css');
 
-/*----------------------------General--------------------------*/
+/* #region ----------------------------General--------------------------*/
 
 :root {
   /* Colors */
@@ -102,9 +102,11 @@ cursor: pointer;
 
   }
 
-/* ------------------------------------------------------------*/
-/*-----------------------------Header--------------------------*/
+/* #endregion ------------------------------------------------------------*/
+
+/* #region --------------------------Header------------------------------ */
 .header {
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -115,10 +117,9 @@ cursor: pointer;
   padding-top: 20px;
   padding-bottom: 14px;
 }
+/* #endregion ------------------------------------------------------------*/
 
-
-/*-------------------------------------------------------------*/
-/*---------------------------Logo------------------------------*/
+/* #region ---------------------------- Logo------------------------------*/
 .logo-link {
   justify-content: normal;
 }
@@ -145,9 +146,9 @@ cursor: pointer;
 }
 
 
-/* ------------------------------------------------------------*/
+/* #endregion ------------------------------------------------------------*/
 
-/*-------------------------Burger menu-------------------------*/
+/* #region-------------------------Burger menu-------------------------*/
 .burger-menu-button {
 
   &:hover .burger-menu-icon {
@@ -178,7 +179,7 @@ cursor: pointer;
   transform-origin: center;
 }
 
-/* Popup  */
+/* #region -------------------------Popup ------------------------------ */
 
 .overlay {
   position: fixed;
@@ -210,7 +211,7 @@ cursor: pointer;
   position: absolute;
   top: 20px;
   right: 20px;
-  color: #fff;
+  color:var(--white, #FFF);
 }
 
 .burger-menu-close-icon {
@@ -235,10 +236,10 @@ cursor: pointer;
 .burger.social-networks-icon {
   fill: var(--white, #fff);
 }
+/* #endregion ------------------------------------------------------------*/
+/* #endregion ------------------------------------------------------------*/
 
-/*-------------------------------------------------------------*/
-
-/*-----------------------------Menu----------------------------*/
+/* #region -----------------------------Menu----------------------------*/
 
 .nav{
   @media screen and (max-width: 767px) {
@@ -272,12 +273,12 @@ gap: 24px;
   transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: #fd9222;
+    color: var(--orange, #FD9222);
   }
 }
 
-/* ------------------------------------------------------------*/
-/*---------------------------Social networks-------------------*/
+/* #endregion ------------------------------------------------------------*/
+/* #region ---------------------------Social networks-------------------*/
 
 .social-networks-container {
 
@@ -295,10 +296,7 @@ gap: 24px;
   }
 }
 .social-networks {
-
   gap: 14px;
-
-
 }
 
 .social-networks-link {
@@ -313,10 +311,10 @@ gap: 24px;
   transition: border-color 0.2s ease-in-out;
 
   &:hover {
-    border-color: #fd9222;
+    border-color: var(--orange, #FD9222);
 
     .social-networks-icon {
-      fill: #fd9222;
+      fill: var(--orange, #FD9222);
     }
 
   }
@@ -324,11 +322,39 @@ gap: 24px;
   .social-networks-icon {
     transition: fill 0.2s ease-in-out;
   }
+
 }
 
-/*-------------------------------------------------------------*/
+.social-networks-footer{
+  justify-content: flex-start;
+  gap: 14px;
+}
+.social-networks-link-footer{
 
-/*----------------------------Hero-----------------------------*/
+  display: flex;
+padding: 8px;
+align-items: flex-start;
+gap: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  &:hover {
+    border-color: var(--orange, #FD9222);
+
+    .social-networks-icon {
+      fill: var(--orange, #FD9222);
+    }
+
+  }
+  .social-networks-icon{
+    fill: var(--white, #FFF);
+    transition: fill 0.2s ease-in-out;
+
+}}
+
+/* #endregion ------------------------------------------------------------*/
+
+/* #region ----------------------------Hero-----------------------------*/
 .hero {
   padding-top: 64px;
 }
@@ -408,9 +434,9 @@ gap: 24px;
   height: 16px;
 }
 
-/*-------------------------------------------------------------*/
+/* #endregion ------------------------------------------------------------*/
 
-/*--------------------------Benefits---------------------------*/
+/* #region --------------------------Benefits---------------------------*/
 .benefits {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -461,9 +487,9 @@ gap: 24px;
   letter-spacing: 1.62px;
 }
 
-/*-------------------------------------------------------------*/
+/* #endregion ------------------------------------------------------------*/
 
-/*--------------------------Ingredients------------------------*/
+/* #region --------------------------Ingredients------------------------*/
 .ingredients {
   display: flex;
   justify-content: center;
@@ -629,9 +655,9 @@ gap: 24px;
 }
 
 
-/*-------------------------------------------------------------*/
+/* #endregion ------------------------------------------------------------*/
 
-/*--------------------------Production-------------------------*/
+/* #region --------------------------Production-------------------------*/
 .production {
   display: flex;
   align-items: center;
@@ -694,9 +720,8 @@ gap: 24px;
 }
 
 
-
-/*-------------------------------------------------------------*/
-/*----------------------------Products-------------------------*/
+/* #endregion ------------------------------------------------------------*/
+/* #region ----------------------------Products-------------------------*/
 .products {
   display: flex;
   justify-content: center;
@@ -769,9 +794,9 @@ gap: 24px;
   line-height: normal;
 }
 
-/*-------------------------------------------------------------*/
+/* #endregion ------------------------------------------------------------*/
 
-/*----------------------------Bestsellers----------------------*/
+/* #region ----------------------------Bestsellers----------------------*/
 .bestsellers {
   display: flex;
   justify-content: center;
@@ -844,9 +869,9 @@ gap: 24px;
 
 }
 
-/*-------------------------------------------------------------*/
+/* #endregion ------------------------------------------------------------*/
 
-/*----------------------------Reviews--------------------------*/
+/* #region ----------------------------Reviews--------------------------*/
 .reviews {
   display: flex;
   justify-content: center;
@@ -923,15 +948,14 @@ gap: 24px;
   border-radius: 100px;
   border: 1px solid #FD9222;
 }
+/* #endregion ------------------------------------------------------------*/
 
-/*-------------------------------------------------------------*/
-
-
-/*----------------------------Footer---------------------------*/
+/* #region ----------------------------Footer---------------------------*/
 .footer {
+  color: #FFF;
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: #1E1823;
+  background-color: var(--violet, #1E1823);
 }
 
 .top-footer {
@@ -940,42 +964,51 @@ gap: 24px;
   flex-direction: column;
   padding-bottom: 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+}
+.bottom-footer{
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+}
+
+.link-container {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    
+  }
 }
 
 .footer-title {
-  max-width: 300px;
-  color: #FFF;
-  font-family: Montserrat;
+  max-width: 240px;
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 28px;
-  letter-spacing: 1.8px;
+  line-height: calc(28 / 24);
+  letter-spacing: -0.48px;
 }
 
 
 .footer-text {
-  color: #FFF;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 18px;
-  /* 128.571% */
   margin-bottom: 14px;
 }
 
 .footer-link {
-  color: #FFF;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  /* 128.571% */
-  letter-spacing: -0.28px;
-  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--orange, #FD9222);
+  }
 }
 
 .contacts {
@@ -985,10 +1018,6 @@ gap: 24px;
   gap: 4px;
 }
 
-.social-networks-container {}
-
-
-.bottom-footer {}
 
 .footer-menu {
   display: flex;
@@ -996,34 +1025,22 @@ gap: 24px;
   gap: 18px;
   margin-top: 32px;
   margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    
+  }
 }
 
-.footer-menu-item {}
-
-.footer-menu-link {
-  color: #FFF;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px;
-  /* 114.286% */
-  letter-spacing: -0.28px;
-  text-decoration: none;
-}
 
 .input-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
+  /* max-height: 45px; */
 }
 
 .email-input {
-  display: flex;
-  width: 207px;
   padding: 14px 18px;
-  align-items: flex-start;
-  gap: 40px;
-
   border-radius: 30px;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
 
@@ -1032,30 +1049,19 @@ gap: 24px;
 
 .email-input::placeholder {
   color: rgba(255, 255, 255, 0.30);
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.28px;
 }
 
 .email-button {
-  display: flex;
-  width: 120px;
   padding: 14px 26px;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
 
   border-radius: 100px;
-  background: #FD9222;
+  background: var(--orange, #FD9222);
 }
 
 
-/*-------------------------------------------------------------*/
+/* #endregion ------------------------------------------------------------*/
 
-/*----------------------------Review popup---------------------*/
+/* #region ----------------------------Review popup---------------------*/
 .review-overlay {
   display: flex;
   justify-content: center;
@@ -1229,4 +1235,4 @@ gap: 24px;
   display: flex;
 }
 
-/*-------------------------------------------------------------*/
+/* #endregion ------------------------------------------------------------*/
