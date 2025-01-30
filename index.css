@@ -368,17 +368,18 @@ body {
   left: 0;
   min-height: 620px;
   border-radius: 30px;
+  
+  background-color: #f0f0f0; 
   background-image: linear-gradient(
       rgba(17, 17, 17, 0.4),
       rgba(17, 17, 17, 0.4)
     ),
-    url(../assets/images/hero/chocolate-mobile.webp);
+    url(../assets/images/hero/chocolate-low-res.webp); 
   background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* Retina-екрани для мобільних */
 @media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
   .hero-bg-image {
     background-image: linear-gradient(
@@ -389,7 +390,6 @@ body {
   }
 }
 
-/* Планшети */
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero-bg-image {
     background-image: linear-gradient(
@@ -400,7 +400,6 @@ body {
   }
 }
 
-/* Retina-екрани для планшетів */
 @media (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
   (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero-bg-image {
@@ -412,7 +411,7 @@ body {
   }
 }
 
-/* Десктопи */
+
 @media (min-width: 1200px) {
   .hero-bg-image {
     min-width: 1136px;
@@ -425,7 +424,6 @@ body {
   }
 }
 
-/* Retina-екрани для десктопів */
 @media (min-width: 1200px) and (min-resolution: 192dpi),
   (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero-bg-image {
@@ -436,6 +434,7 @@ body {
       url(./assets/images/hero/chocolate-desktop@2x.webp);
   }
 }
+
 
 .hero-content {
   color: var(--white, #fff);
