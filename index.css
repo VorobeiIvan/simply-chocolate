@@ -372,7 +372,7 @@ body {
       rgba(17, 17, 17, 0.4),
       rgba(17, 17, 17, 0.4)
     ),
-    url(./assets/images/hero/chocolate-mobile.webp);
+    url(../assets/images/hero/chocolate-mobile.webp);
   background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -385,7 +385,7 @@ body {
         rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0.4)
       ),
-      url(./assets/images/hero/chocolate-mobile@2x.webp);
+      url(../assets/images/hero/chocolate-mobile@2x.webp);
   }
 }
 
@@ -396,7 +396,7 @@ body {
         rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0.4)
       ),
-      url(./assets/images/hero/chocolate-tablet.webp);
+      url(../assets/images/hero/chocolate-tablet.webp);
   }
 }
 
@@ -408,7 +408,7 @@ body {
         rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0.4)
       ),
-      url(./assets/images/hero/chocolate-tablet@2x.webp);
+      url(../assets/images/hero/chocolate-tablet@2x.webp);
   }
 }
 
