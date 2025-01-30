@@ -1,14 +1,20 @@
-/* @import url('reset.css'); */
-/* @import url('variables.css'); */
+
 @import url('fonts.css');
 
 /* #region ----------------------------General--------------------------*/
 
 :root {
   /* Colors */
-  --black: #111111, --orange: #fd9222, --violet: #1e1823, --beige: #fcf1e0,
-    --light: #fafafa, --gray: #4c4c4c,
-    --white: #ffffff /* Fonts */ --font-family: 'Montserrat', sans-serif;
+  --black: #111111;
+  --orange: #fd9222;
+  --violet: #1e1823;
+  --beige: #fcf1e0;
+  --light: #fafafa;
+  --gray: #4c4c4c;
+  --white: #ffffff; 
+  
+  /* Fonts */
+  --font-family: 'Montserrat', sans-serif;
   --font-size: 14px;
 }
 
@@ -216,7 +222,7 @@ body {
   gap: 24px;
 }
 
-.social-networks-burger.list{
+.social-networks-burger.list {
   gap: 14px;
 }
 .burger.menu-link {
@@ -229,8 +235,6 @@ body {
 
 .burger.social-networks-icon {
   fill: var(--white, #fff);
-
-
 }
 
 /* #endregion ------------------------------------------------------------*/
@@ -474,8 +478,6 @@ body {
 
   text-decoration: none;
   gap: 14px;
-
- 
 }
 
 .primary-button {
@@ -506,13 +508,12 @@ body {
   &:hover {
     color: var(--orange, #fd9222);
     .scroll-down-button {
-    background-color: var(--orange, #fd9222);
+      background-color: var(--orange, #fd9222);
+    }
+    .scroll-down-icon {
+      fill: var(--white, #fff);
+    }
   }
-  .scroll-down-icon {
-    fill: var(--white, #fff);
-  }
-}
-
 }
 
 .scroll-down-button {
@@ -612,7 +613,6 @@ body {
 
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
-  
   }
 }
 
@@ -688,9 +688,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .arrow-button {
@@ -759,13 +757,12 @@ body {
 }
 
 .description-text {
-
   display: -webkit-box;
-  -webkit-line-clamp: 8; 
+  -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: calc(1.2em * 10); 
+  max-height: calc(1.2em * 10);
 }
 
 .read-more-toggle {
@@ -784,11 +781,11 @@ body {
 
 .read-more-toggle:checked + .description-text-wrapper .description-text {
   -webkit-line-clamp: unset;
-  max-height: none; 
+  max-height: none;
 }
 
 .read-more-toggle:checked + .description-text-wrapper .read-more-label {
-  display: none; 
+  display: none;
 }
 
 /* #endregion ------------------------------------------------------------*/
@@ -941,15 +938,16 @@ body {
   background: var(--white, #fff);
 
   @media screen and (min-width: 768px) {
-   max-width: 336px;
-   max-height: 364px;
-}
+    max-width: 336px;
+    max-height: 364px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding: 20px 32px;
     max-width: 262px;
     max-height: 364px;
-  }}
+  }
+}
 
 .products-title {
   margin-bottom: 2px;
@@ -975,7 +973,7 @@ body {
 
   border-radius: 100px;
   border: 1px solid rgba(17, 17, 17, 0.1);
-  background:var(--light, #fafafa);
+  background: var(--light, #fafafa);
 
   font-weight: 600;
   line-height: normal;
@@ -1007,18 +1005,18 @@ body {
   position: relative;
   overflow: hidden;
 
-  &:nth-child(n+2) {
+  &:nth-child(n + 2) {
     display: none;
   }
 
   @media screen and (min-width: 768px) {
-    &:nth-child(-n+2) {
+    &:nth-child(-n + 2) {
       display: block;
     }
   }
   @media screen and (min-width: 1200px) {
-    &:nth-child(-n+3) {
-      display: block;;
+    &:nth-child(-n + 3) {
+      display: block;
     }
   }
 }
@@ -1078,7 +1076,7 @@ body {
 
   @media screen and (min-width: 768px) {
     gap: 16px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -1100,20 +1098,20 @@ body {
   background: var(--white, #fff);
   box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
 
-  &:nth-child(n+2){
-display: none;
+  &:nth-child(n + 2) {
+    display: none;
   }
   @media screen and (min-width: 768px) {
-    &:nth-child(-n+2){
-    display: block;
-    max-width: 344px;
-  }
-  @media screen and (min-width: 1200px) {
-    &:nth-child(-n+3){
+    &:nth-child(-n + 2) {
       display: block;
-      max-width: 360px;
-    }   }
-    
+      max-width: 344px;
+    }
+    @media screen and (min-width: 1200px) {
+      &:nth-child(-n + 3) {
+        display: block;
+        max-width: 360px;
+      }
+    }
   }
 }
 
@@ -1129,15 +1127,13 @@ display: none;
 
   font-weight: 600;
   line-height: 24px;
-
 }
 
 .reviews-text {
   color: rgba(17, 17, 17, 0.7);
-  }
+}
 
 .reviews-button {
-
   width: 222px;
   height: 50px;
   padding: 14px 40px;
@@ -1146,7 +1142,7 @@ display: none;
   border-radius: 100px;
   border: 1px solid var(--orange, #fd9222);
 
- transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     background-color: var(--orange, #fd9222);
@@ -1163,12 +1159,10 @@ display: none;
   padding-bottom: 32px;
   background-color: var(--violet, #1e1823);
   @media screen and (min-width: 768px) {
-
-     padding-top: 50px;
-  padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
-
 
 .top-footer {
   display: flex;
@@ -1260,7 +1254,6 @@ display: none;
   &:focus,
   &:hover {
     border-color: var(--orange, #fd9222);
-
   }
 }
 
@@ -1307,15 +1300,12 @@ display: none;
   z-index: 9999;
   padding: 32px 24px;
 
-  @media (min-width: 768px)  {
+  @media (min-width: 768px) {
     max-width: 517px;
-    
+
     padding: 40px;
-    
   }
 }
-
-
 
 .review-form {
   display: flex;
@@ -1330,11 +1320,8 @@ display: none;
   right: 24px;
 
   z-index: 9999;
-font-size: 24px;
-
+  font-size: 24px;
 }
-
-
 
 .review-popup-title {
   font-size: 20px;
@@ -1415,7 +1402,7 @@ font-size: 24px;
 
   &:focus,
   &:hover {
-    border-color:var(--orange, #fd9222);
+    border-color: var(--orange, #fd9222);
   }
 }
 
@@ -1429,12 +1416,10 @@ font-size: 24px;
   border: 1px solid rgba(17, 17, 17, 0.14);
   appearance: none;
   background-color: transparent;
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 
   &:hover {
-    border-color:var(--orange, #fd9222);
+    border-color: var(--orange, #fd9222);
   }
 }
 
@@ -1459,9 +1444,11 @@ font-size: 24px;
   display: flex;
   flex-wrap: wrap;
 }
-.checkbox-link{margin-left: 30px;
+.checkbox-link {
+  margin-left: 30px;
 
-@media screen and (min-width: 768px) {
-  margin-left: 4px;
-}}
+  @media screen and (min-width: 768px) {
+    margin-left: 4px;
+  }
+}
 /* #endregion ------------------------------------------------------------*/
